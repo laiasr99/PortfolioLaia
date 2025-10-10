@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #F5F2ED;
+  background-color: #1B1B1F;
+  line-height: 1.6;
+}
+
+section,
+header,
+footer {
+  position: relative;
+}
+
+
+.site-header {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background-color: #1B1B1F;
+  border-bottom: 3px solid #D4AF37;
+}
+
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #F5F2ED;
+}
+
+.logo-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hamburger-btn {
+  margin-top: 1rem;
+  font-size: 2rem;
+  background-color: #D4AF37;
+  color: #1B1B1F;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.hamburger-btn:hover {
+  transform: scale(1.05);
+  background-color: #B28F29;
+}
+
+.site-nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #F5F2ED;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.site-nav a:hover {
+  color: #D4AF37;
+}
+
+/* Clase activa para desplegar */
+.site-nav.active {
+  max-height: 500px; /* suficiente para mostrar todos los enlaces */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #1B1B1F;
+  border-right: 3px solid #D4AF37;
+  padding-top: 4rem;
+  transition: left 0.3s ease;
+  z-index: 1001;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+.sidebar ul li {
+  margin: 1.5rem 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #F5F2ED;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #D4AF37;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+  display: none;
+}
+.sidebar-overlay.active {
+  display: block;
+}
+.container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #2E2C33;
+  border: 1px solid #4B4B54;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #F5F2ED;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #D4AF37;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+
+.subtitle {
+  font-style: italic;
+  color: #C9C5BC;
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-top: 1rem;
+  color: #E1DDD6;
+}
+
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.proyecto-card {
+  background: #3B383F;
+  border: 1px solid #4B4B54;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.proyecto-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(212, 175, 55, 0.3), transparent 60%);
+  pointer-events: none;
+}
+
+.proyecto-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.7);
+}
+
+.proyecto-content {
+  padding: 1.5rem;
+}
+
+.project-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #F5F2ED;
+  margin-bottom: 0.8rem;
+}
+
+.project-desc {
+  color: #C9C5BC;
+  line-height: 1.4;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #D4AF37;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.project-link:hover {
+  color: #E1DDD6;
+  border-bottom: 1px solid #E1DDD6;
+}
+
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.skills-list li {
+  background: #4B4B54;
+  color: #F5F2ED;
+  padding: 0.7rem 1.3rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.skills-list li:hover {
+  background-color: #D4AF37;
+  color: #1B1B1F;
+  transform: scale(1.1);
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact-form label {
+  color: #F5F2ED;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: 1px solid #4B4B54;
+  border-radius: 6px;
+  background-color: #2E2C33;
+  color: #E1DDD6;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #D4AF37;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #99938B;
+}
+
+.contact-form button {
+  align-self: start;
+  background-color: #D4AF37;
+  color: #1B1B1F;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #D4AF37;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #B28F29;
+  transform: scale(1.05);
+}
+
+
+.site-footer {
+  background: #1B1B1F;
+  color: #F5F2ED;
+  border-top: 3px solid #D4AF37;
+  padding: 2rem 1rem;
+}
+
+.footer-inner {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #C9C5BC;
+}
+
+.socials a {
+  color: #F5F2ED;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #D4AF37;
+}
+
+
+.music-btn {
+  background-color: #D4AF37;
+  color: #1B1B1F;
+  border: 2px solid #D4AF37;
+  padding: 0.7rem 1.4rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, color 0.3s;
+}
+
+.music-btn:hover {
+  background-color: #B28F29;
+  color: #F5F2ED;
+  transform: scale(1.05);
+}

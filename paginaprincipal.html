@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio de LaiaSR – Expedition 33 Style</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="logo">Portfolio de LaiaSR</h1>
+    <img src="./assets/IMG_20251007_213131.png" alt="Laia Sánchez" class="logo-img" />
+
+    <button id="hamburger-btn" class="hamburger-btn">☰</button>
+
+    <nav class="site-nav" id="nav-menu">
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sobre-mi" class="container section-about">
+    <h2 class="section-title">Sobre mí</h2>
+    <p class="subtitle">Developer &amp; amante de los videojuegos</p>
+    <p class="description">
+      Entre la luz y la sombra he aprendido a adaptarme y mantener la calma bajo presión, desde mis días como comisaria de pista hasta mis prácticas de laboratorio. Hoy canalizo esa experiencia en el desarrollo frontend, buscando que cada línea de código sea una llave que abra mundos y transmita emoción y contraste.
+    </p>
+  </section>
+
+
+  <section id="proyectos" class="container section-projects"></section>
+  <section id="habilidades" class="container section-skills"></section>
+
+  <section id="contacto" class="container section-contact">
+    <h2 class="section-title">Contáctame</h2>
+    <form class="contact-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <button id="music-btn" class="music-btn">🎵 Una vie à peindre</button>
+      <p class="footer-copy">© <span id="year"></span> Laia</p>
+      <div class="socials">
+        <a href="#">LinkedIn</a>
+        <a href="https://github.com/laiasr99">GitHub</a>
+      </div>
+    </div>
+
+    <audio id="bg-music" loop>
+      <source src="./assets/Une vie à peindre - Lorien Testard.mp3" type="audio/mpeg">
+      Tu navegador no soporta el audio.
+    </audio>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
