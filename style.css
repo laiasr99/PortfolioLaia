@@ -170,7 +170,7 @@ footer {
 
 
 .subtitle {
-  font-style: italic;
+  font-family: "Aclonica", sans-serif;
   color: #C9C5BC;
   margin-bottom: 1rem;
 }
@@ -178,6 +178,7 @@ footer {
 .description {
   margin-top: 1rem;
   color: #E1DDD6;
+  font-family: "Lateef", cursive;
 }
 
 
