@@ -34,7 +34,7 @@ footer {
 }
 
 .logo {
-  font-family: "Playfair Display", serif;
+ font-family: "Lateef", cursive;
   font-size: 2rem;
   color: #F5F2ED;
 }
@@ -91,9 +91,9 @@ footer {
   color: #D4AF37;
 }
 
-/* Clase activa para desplegar */
+
 .site-nav.active {
-  max-height: 500px; /* suficiente para mostrar todos los enlaces */
+  max-height: 500px;
 }
 
 .sidebar {
@@ -159,7 +159,7 @@ footer {
 }
 
 .section-title {
-  font-family: "Playfair Display", serif;
+  font-family: "Lateef", cursive;
   font-size: 2rem;
   color: #F5F2ED;
   margin-bottom: 1rem;
@@ -217,7 +217,7 @@ footer {
 }
 
 .project-title {
-  font-family: "Playfair Display", serif;
+  font-family: "Lateef", cursive;
   font-size: 1.5rem;
   color: #F5F2ED;
   margin-bottom: 0.8rem;
@@ -303,6 +303,7 @@ footer {
 }
 
 .contact-form button {
+  font-family: "Lateef", cursive;
   align-self: start;
   background-color: #D4AF37;
   color: #1B1B1F;
