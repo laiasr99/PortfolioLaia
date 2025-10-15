@@ -9,7 +9,7 @@ let isPlaying = false;
 btn.addEventListener('click', () => {
   if (!isPlaying) {
     music.play();
-    btn.textContent = "⏸️ Pausar música";
+    btn.textContent = "⏸️ Pausar Une vie à peindre";
   } else {
     music.pause();
     btn.textContent = "🎵 Une vie à peindre";
