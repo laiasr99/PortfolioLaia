@@ -259,7 +259,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, rgba(212, 175, 55, 0.3), transparent 60%);
+  background: (circle at center, rgba(212, 175, 55, 0.3), transparent 60%);
   pointer-events: none;
 }
 
