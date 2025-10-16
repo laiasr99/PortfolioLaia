@@ -40,7 +40,7 @@ const proyectos = [
   },
   {
     title: "Proyecto 2: Mi portfolio",
-    desc: "Mi portfolio: un viaje visual y creativo por mis proyectos frontend.",
+    desc: "Mi portfolio: Un lugar para poder mostrar mis proyectos frontend.",
     link: "https://github.com/laiasr99/PortfolioLaia"
   },
   {
