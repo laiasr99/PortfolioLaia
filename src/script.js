@@ -1,23 +1,6 @@
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-
-const music = document.getElementById('bg-music');
-const btn = document.getElementById('music-btn');
-let isPlaying = false;
-
-btn.addEventListener('click', () => {
-  if (!isPlaying) {
-    music.play();
-    btn.textContent = "⏸️ Pausar Une vie à peindre";
-  } else {
-    music.pause();
-    btn.textContent = "🎵 Une vie à peindre";
-  }
-  isPlaying = !isPlaying;
-});
-
-
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const navMenu = document.getElementById('nav-menu');
 
